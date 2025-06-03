@@ -1,48 +1,84 @@
+index.html:
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial - GS-FrontEndDesign</title>
+    <title>Flood Watch - Monitoramento Inteligente de Águas</title>
     <link rel="stylesheet" href="src/CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="theme-default">
+
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="pages/beneficios.html">Benefícios</a></li>
-                <li><a href="pages/objetivos.html">Objetivos</a></li>
-                <li><a href="pages/publicoAlvo.html">Público Alvo</a></li>
-                <li><a href="pages/solucao-dia-a-dia.html">Solução Dia a Dia</a></li>
-                <li><a href="pages/tecnologias.html">Tecnologias</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="logo-container">
+                <img src="src/assets/imgs/logo.png" alt="Flood Watch Logo" id="logo">
+                <h1>Flood Watch</h1>
+            </div>
+            <nav id="main-nav">
+                <button id="hamburger-button" aria-label="Abrir menu" aria-expanded="false">
+                    <img src="src/assets/imgs/hamburger-menu.png" alt="Menu" id="hamburger-icon">
+                </button>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="pages/about.html">Sobre Nós</a></li>
+                    <li><a href="pages/services.html">Serviços</a></li>
+                    <li><a href="pages/monitoring.html">Monitoramento</a></li>
+                    <li><a href="pages/quiz.html">Quiz</a></li>
+                    <li><a href="pages/contact.html">Contato</a></li>
+                </ul>
+                <div class="theme-switcher">
+                    <button id="theme-default-btn" aria-label="Tema Padrão"><img src="src/assets/imgs/icon-theme-default.png" alt="Tema Padrão"></button>
+                    <button id="theme-dark-btn" aria-label="Tema Escuro"><img src="src/assets/imgs/icon-theme-dark.png" alt="Tema Escuro"></button>
+                    <button id="theme-light-alt-btn" aria-label="Tema Claro Alternativo"><img src="src/assets/imgs/icon-theme-light.png" alt="Tema Claro Alternativo"></button>
+                </div>
+            </nav>
+        </div>
     </header>
 
-    <div class="container">
-        <h1 class="section-title">INTRODUÇÃO</h1>
-        <p class="company-name">Nome da Empresa : FloodWatch</p>
-
-        <h2>Introdução:</h2>
-        <p>Em um mundo cada vez mais afetado pelas mudanças climáticas, a FloodWatch surge com a missão de prevenir desastres e salvar vidas por meio da tecnologia. Somos uma empresa especializada em soluções inteligentes para o monitoramento e alerta precoce de enchentes, combinando sensores de nível de água, análise de dados em tempo real e comunicação eficiente com a população e órgãos públicos. Nosso sistema integrado permite identificar riscos com antecedência, minimizando danos e otimizando respostas emergenciais. Com atuação voltada para áreas urbanas e regiões vulneráveis, a FloodWatch promove segurança hídrica, planejamento urbano resiliente e proteção ambiental. Monitoramos o presente para proteger o futuro.</p>
-
-        <h2>Dores a serem atendidas:</h2>
-        <div style="display: flex; justify-content: space-between;">
-            <div style="flex: 1; margin-right: 10px;">
-                <h3>Dores da População:</h3>
-                <ul>
-                    <li>Falta de aviso prévio sobre enchentes.</li>
-                    <li>Perda de bens materiais, moradia e, em casos extremos, vidas.</li>
-                    <li>Insegurança constante em épocas de chuva.</li>
-                    <li>Desinformação sobre áreas de risco e rotas seguras.</li>
-                    <li>Ausência de suporte rápido durante e após os alagamentos.</li>
-                </ul>
+    <main>
+        <section id="hero" class="slideshow-container">
+            <div class="slide fade">
+                <img src="src/assets/imgs/slide1.png" alt="Rio sereno com vegetação exuberante">
+                <div class="slide-caption">Monitoramento Contínuo de Níveis Fluviais</div>
             </div>
-            <div style="flex: 1; margin-left: 10px;">
-                <h3>Dores do Governo:</h3>
-                <ul>
-                    <li>Dificuldade na coleta de dados precisos e em tempo real.</li>
-                    <li>Resposta lenta e desorganizada a desastres.</li>
-                    <li>Falta de integração entre setores (defesa civil, meio ambiente, infraestrutura).</li>
-                    <li>Baixa capacidade de prevenção, atuando majoritariamente de forma reativa
+            <div class="slide fade">
+                <img src="src/assets/imgs/slide2.png" alt="Sensor de nível de água em ambiente urbano">
+                <div class="slide-caption">Tecnologia Avançada para Prevenção</div>
+            </div>
+            <div class="slide fade">
+                <img src="src/assets/imgs/slide3.png" alt="Sala de controle com monitores exibindo dados hidrológicos">
+                <div class="slide-caption">Análise de Dados para Tomada de Decisão</div>
+            </div>
+            <a class="prev" id="prev-slide">&#10094;</a>
+            <a class="next" id="next-slide">&#10095;</a>
+            <div class="dots-container">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
+
+        <section id="problem-statement" class="content-section alt-bg">
+            <div class="container">
+                <h2>O Problema que Resolvemos</h2>
+                <p>Enchentes e inundações são desastres naturais que causam perdas incalculáveis anualmente, afetando vidas, infraestrutura e economias. A imprevisibilidade e a falta de sistemas de alerta eficazes agravam o cenário, deixando comunidades vulneráveis a danos severos e, em muitos casos, à perda de vidas.</p>
+                <p>As cidades enfrentam desafios crescentes com o aumento da urbanização e das mudanças climáticas, que intensificam a frequência e a severidade dos eventos hídricos extremos. A gestão tradicional de riscos muitas vezes reage ao desastre em vez de preveni-lo, resultando em respostas lentas e ineficazes.</p>
+                <p>Nossa solução surge como uma resposta direta a essa necessidade crítica, oferecendo um sistema proativo de monitoramento e alerta que capacita autoridades e cidadãos a agirem com antecedência, minimizando impactos e salvando vidas.</p>
+            </div>
+        </section>
+        </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Flood Watch. Todos os direitos reservados.</p>
+            <p>Tecnologia a serviço da sua segurança.</p>
+        </div>
+    </footer>
+
+    <script src="src/JS/script.js"></script>
+</body>
+</html>
