@@ -72,3 +72,45 @@
                 <p>Nossa missão é transformar a incerteza em informação, e o medo em preparação. Entre em contato e descubra como podemos tornar seu dia a dia e sua cidade mais seguros.</p>
             </div>
         </section>
+        <section id="contact-form-section" class="content-section">
+            <div class="container">
+                <h2>Entre em Contato Conosco</h2>
+                <p>Tem alguma dúvida, precisa de uma demonstração ou deseja saber mais sobre como a Flood Watch pode ajudar sua comunidade ou organização? Preencha o formulário abaixo e nossa equipe entrará em contato em breve.</p>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" required>
+                        <span class="error-message" id="name-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Assunto:</label>
+                        <input type="text" id="subject" name="subject" required>
+                        <span class="error-message" id="subject-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <span class="error-message" id="message-error"></span>
+                    </div>
+                    <button type="submit" class="cta-button">Enviar Mensagem</button>
+                    <p id="form-success-message" class="success-message" style="display:none;">Mensagem enviada com sucesso!</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Flood Watch. Todos os direitos reservados.</p>
+            <p>Tecnologia a serviço da sua segurança.</p>
+        </div>
+    </footer>
+
+    <script src="../src/JS/script.js"></script>
+</body>
+</html>
