@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Flood Watch</title>
+    <link rel="stylesheet" href="../src/CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="theme-default">
+
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="../src/assets/imgs/logo.png" alt="Flood Watch Logo" id="logo">
+                <h1>Flood Watch</h1>
+            </div>
+            <nav id="main-nav">
+                <button id="hamburger-button" aria-label="Abrir menu" aria-expanded="false">
+                    <img src="../src/assets/imgs/hamburger-menu.png" alt="Menu" id="hamburger-icon">
+                </button>
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="about.html">Sobre Nós</a></li>
+                    <li><a href="services.html">Serviços</a></li>
+                    <li><a href="monitoring.html">Monitoramento</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                </ul>
+                <div class="theme-switcher">
+                    <button id="theme-default-btn" aria-label="Tema Padrão"><img src="../src/assets/imgs/icon-theme-default.png" alt="Tema Padrão"></button>
+                    <button id="theme-dark-btn" aria-label="Tema Escuro"><img src="../src/assets/imgs/icon-theme-dark.png" alt="Tema Escuro"></button>
+                    <button id="theme-light-alt-btn" aria-label="Tema Claro Alternativo"><img src="../src/assets/imgs/icon-theme-light.png" alt="Tema Claro Alternativo"></button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="solution-benefits" class="content-section">
+            <div class="container">
+                <h2>Os Benefícios da Nossa Solução</h2>
+                <p>A solução Flood Watch vai além do simples monitoramento, entregando um conjunto de benefícios que transformam a gestão de riscos hídricos e a segurança das comunidades:</p>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <h3>Prevenção de Desastres</h3>
+                        <p>Alertas antecipados e precisos permitem ações preventivas, salvando vidas e protegendo propriedades antes que a inundação ocorra.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h3>Tomada de Decisão Otimizada</h3>
+                        <p>Dados em tempo real e análises preditivas oferecem subsídios para que autoridades tomem decisões rápidas e eficazes em momentos críticos.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h3>Redução de Custos</h3>
+                        <p>Minimiza perdas econômicas com reparos de infraestrutura, deslocamento de pessoas e reconstrução pós-desastre.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h3>Segurança Pública Aprimorada</h3>
+                        <p>Aumenta a confiança da população na capacidade de resposta das autoridades e melhora a segurança geral em áreas de risco.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h3>Conscientização e Engajamento</h3>
+                        <p>Ferramentas interativas e informações claras promovem a conscientização e incentivam a participação da comunidade na prevenção.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h3>Planejamento Urbano Inteligente</h3>
+                        <p>Oferece dados históricos para auxiliar no planejamento de longo prazo de infraestruturas de drenagem e uso do solo, tornando as cidades mais resilientes.</p>
+                    </div>
+                </div>
+                <p>Nossa tecnologia é um investimento na segurança, na sustentabilidade e na capacidade de adaptação das cidades frente aos desafios hídricos do futuro.</p>
+            </div>
+        </section>
+        <section id="quiz-section" class="content-section alt-bg">
+            <div class="container">
+                <h2>Teste Seus Conhecimentos</h2>
+                <p>Participe do nosso quiz interativo sobre segurança hídrica e monitoramento de enchentes!</p>
+                <button id="start-quiz-btn" class="cta-button">Iniciar Quiz</button>
+                <div id="quiz-container" class="hidden">
+                    <div id="question-area"></div>
+                    <div id="options-area"></div>
+                    <button id="next-question-btn" class="cta-button">Próxima Pergunta</button>
+                    <div id="quiz-feedback" class="feedback"></div>
+                    <div id="quiz-result" class="hidden">
+                        <h3>Resultado do Quiz</h3>
+                        <p id="score-text"></p>
+                        <p id="result-message"></p>
+                        <button id="restart-quiz-btn" class="cta-button">Tentar Novamente</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Flood Watch. Todos os direitos reservados.</p>
+            <p>Tecnologia a serviço da sua segurança.</p>
+        </div>
+    </footer>
+
+    <script src="../src/JS/script.js"></script>
+</body>
+</html>
